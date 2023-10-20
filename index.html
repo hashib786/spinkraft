@@ -15,7 +15,7 @@
   </head>
   <body class="relative">
     <!-- NavBar Start -->
-    <nav class="bg-blue-950 sticky top-0 left-0 right-0">
+    <nav class="bg-blue-950 sticky top-0 left-0 right-0 z-50">
       <ul
         class="mx-auto max-w-7xl flex items-center justify-center gap-6 md:gap-8 text-gray-50 font-semibold uppercase"
       >
@@ -35,9 +35,9 @@
     <!-- NavBar End -->
 
     <!-- Main Section Start -->
-    <main class="mx-auto max-w-7xl py-4 px-6">
+    <main class="mx-auto max-w-7xl py-4 px-6 flex flex-col gap-28 mt-10">
       <!-- Header Section Start -->
-      <header class="my-9 flex items-center justify-between gap-8">
+      <header class="flex items-center justify-between gap-8">
         <div class="w-[40%]">
           <img class="w-full" src="./img/hero.jpg" alt="Header image" />
         </div>
@@ -70,6 +70,37 @@
       <!-- Header Section End -->
 
       <!-- PortFolio Section Start -->
+      <section class="flex flex-col gap-7 text-center">
+        <div class="relative">
+          <h2 class="text-6xl text-blue-950 font-semibold">Our Portfolio</h2>
+          <div class="w-36 bg-blue-500 h-[2px] mx-auto mt-4 mb-1"></div>
+          <div class="w-28 bg-blue-500 h-[2px] mx-auto mb-4"></div>
+        </div>
+        <p class="md:w-3/6 text-center mx-auto text-gray-400">
+          We have wide-ranging in-house experience and a network of trusted
+          collaborators to facilitate sustainable energy systems.
+        </p>
+        <div class="flex gap-7 items-center flex-wrap justify-center mt-8">
+          <div
+            class="flex gap-2 flex-col shadow-md py-5 px-7 border border-blue-600 shadow-blue-800 rounded-md w-56"
+          >
+            <img src="./img/axitech.png" alt="Axitec" />
+            <h3>Axitec</h3>
+          </div>
+          <div
+            class="flex gap-2 flex-col shadow-md py-5 px-7 border border-blue-600 shadow-blue-800 rounded-md w-56"
+          >
+            <img src="./img/wattpower.png" alt="WattPowe" />
+            <h3>WattPowe /r</h3>
+          </div>
+          <div
+            class="flex gap-2 flex-col shadow-md py-5 px-7 border border-blue-600 shadow-blue-800 rounded-md w-56"
+          >
+            <img src="./img/zizi.png" alt="ZIZI" />
+            <h3>ZIZI+</h3>
+          </div>
+        </div>
+      </section>
       <!-- PortFolio Section End -->
     </main>
     <!-- Main Section End -->
