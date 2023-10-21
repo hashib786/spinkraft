@@ -5,6 +5,15 @@ export default {
     fontFamily: {
       sans: "Roboto, sans-serif",
     },
+    screens: {
+      sm: "640px",
+      md: "768",
+      lg: "1024px",
+      tablet: "1100px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+
     extend: {},
   },
   plugins: [],
