@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive viewport settings -->
+
+    <!-- Favicon link, specifying the icon for the tab in the browser -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Preconnect hints for Google Fonts to improve loading speed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to include Google Fonts "Roboto" with various font weights -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script tag to include Font Awesome icons kit -->
+    <script
+      src="https://kit.fontawesome.com/69737cd0dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link to an external CSS file to apply styles to your page -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Spinkraft Ventures</title>
+    <!-- Title of the web page, displayed in the browser tab -->
+
+    <!-- Script tag to include an external JavaScript file "app.js" with "defer" attribute, ensuring it's executed after the page is parsed -->
+    <script src="/js/app.js" defer></script>
+  </head>
+
+  <body class="relative">
+    <!-- NavBar Start -->
+    <nav
+      class="bg-blue-950 group pb-4 transition-all duration-500 sm:p-0 fixed sm:sticky top-2 left-[-9.5rem] sm:top-0 sm:left-0 sm:right-0 z-50 shadow-sm shadow-blue-400"
+    >
+      <!-- Mobile Menu Start-->
+      <div
+        id="menu"
+        class="sm:hidden z-50 transition-all duration-500 absolute top-2 group right-[-55px] text-xl bg-blue-500 text-gray-50 w-10 py-2 aspect-auto flex items-center justify-center rounded-sm"
+      >
+        <i class="fa-solid fa-bars group-[.hashib]:hidden"></i>
+        <i class="fa-solid fa-xmark hidden group-[.hashib]:block"></i>
+      </div>
+      <!-- Mobile Menu End-->
+
+      <ul
+        class="mx-auto max-w-7xl text-sm lg:text-base sm:flex-row flex-col flex items-center justify-center gap-4 sm:gap-3 min-[668px]:gap-4 min-[878px]:gap-6 md:gap-8 text-gray-50 font-medium min-[878px]:font-semibold uppercase"
+      >
+        <li><a href="/" class="text-blue-500">HOME</a></li>
+        <li><a href="/about.html" class="hover:text-blue-500">ABOUT</a></li>
+        <li>
+          <a href="#" class="hover:text-blue-500">PRODUCT</a>
+        </li>
+        <li><a href="/blog.html" class="hover:text-blue-500">BLOG</a></li>
+        <li
+          class="bg-blue-500 text-xl order-first sm:order-none md:text-2xl min-[878px]:text-4xl lg:text-6xl py-4 px-5 min-[668px]:px-7 hover:bg-blue-600"
+        >
+          <a href="/">SPINKRAFT</a>
+        </li>
+        <li><a href="/team.html" class="hover:text-blue-500">TEAM</a></li>
+        <li><a href="/faq.html" class="hover:text-blue-500">FAQ'S</a></li>
+        <li>
+          <a href="/contact.html" class="hover:text-blue-500">CONTACT</a>
+        </li>
+        <li>
+          <a href="/login.html" class="hover:text-blue-500">LOGIN</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Main Section Start -->
+    <main
+      class="mx-auto max-w-7xl py-2 px-5 min-[526px]:py-4 min-[526px]:px-6 flex flex-col gap-14 mt-10 divide-y divide-gray-100"
+    >
+      <!-- Blog Section Start -->
+
+      <section class="py-14 px-14 flex flex-col">
+        <div class="relative w-4/5 mx-auto">
+          <h2
+            class="text-2xl min-[404px]:text-4xl lg:text-6xl text-blue-950 font-semibold capitalize"
+          >
+            From the Blog
+          </h2>
+          <div class="w-36 bg-blue-500 h-[2px] mt-4 mb-1"></div>
+          <div class="w-28 bg-blue-500 h-[2px] mb-4"></div>
+          <p class="w-full mx-auto text-gray-700 text-lg">
+            Explore Insights for Solar Energy and Sustainability
+          </p>
+
+          <div class="flex gap-y-5 mt-9">
+            <div class="flex gap-x-5 gap-y-5 items-stretch">
+              <div class="w-2/6">
+                <img
+                  src="/img/blog1.jpg"
+                  alt="Blog1"
+                  class="w-full rounded-md h-full object-cover"
+                />
+              </div>
+              <div class="cursor-pointer flex flex-col gap-y-3">
+                <div class="flex gap-x-4">
+                  <p class="text-sm text-gray-400">Mar 16, 2020</p>
+                  <p
+                    class="text-sm bg-slate-50 hover:bg-slate-100 text-gray-500 rounded px-2 py-1"
+                  >
+                    Marketing
+                  </p>
+                </div>
+                <h2 class="text-lg font-semibold">
+                  Boost your conversion rate
+                </h2>
+                <p class="text-sm text-gray-500">
+                  Learn how to boost your solar conversion rate with effective
+                  strategies. Explore key insights and best practices to make
+                  your solar projects more successful.
+                </p>
+                <div class="h-[1px] bg-slate-100"></div>
+                <div class="flex gap-2 items-center gap-x-4">
+                  <img
+                    src="/img/ajay-patel.jpg"
+                    alt="ajay-patel"
+                    class="block w-11 aspect-auto rounded-full"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h5 class="text-sm font-semibold">Michael Foster</h5>
+                    <p class="text-gray-500">Co-Founder / CTO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section End -->
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+
+    <footer class="bg-blue-950 py-24 px-11">
+      <div
+        class="bg-[#ffffff0d] py-7 px-5 rounded-sm mx-auto flex flex-wrap gap-x-9 gap-y-4 items-center justify-around text-center max-w-screen-xl"
+      >
+        <div class="flex flex-col gap-2">
+          <h3
+            class="text-blue-500 text-base min-[878px]:text-xl tracking-[0.2rem] min-[878px]:tracking-[0.4rem] font-semibold uppercase"
+          >
+            OUR OFFICE
+          </h3>
+          <p class="text-gray-200 font-light text-sm min-[878px]:text-base">
+            Raikar Chambers, Mumbai, Maharashtra
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3
+            class="text-blue-500 text-base min-[878px]:text-xl tracking-[0.2rem] min-[878px]:tracking-[0.4rem] font-semibold uppercase"
+          >
+            EMAIL US
+          </h3>
+          <p class="text-gray-200 font-light text-sm min-[878px]:text-base">
+            pravesh@spinkraft.com
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3
+            class="text-blue-500 text-base min-[878px]:text-xl tracking-[0.2rem] min-[878px]:tracking-[0.4rem] font-semibold uppercase"
+          >
+            CALL US
+          </h3>
+          <p class="text-gray-200 font-light text-sm min-[878px]:text-base">
+            +91 8130 177 743
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-start justify-between flex-wrap gap-7 gap-y-10 mt-16 text-gray-50 max-w-screen-xl mx-auto"
+      >
+        <div>
+          <img
+            src="img/logo.png"
+            class="w-48 bg-gray-50 rounded-md py-2 px-4"
+            alt="Company Logo"
+          />
+          <h3 class="mt-5">Spinkraft Ventures Private Limited</h3>
+          <p class="text-gray-300 text-sm">Lets Keep Our Earth Green</p>
+          <div class="flex items-center gap-6 mt-5 text-2xl text-gray-400">
+            <a
+              class="hover:text-blue-950 border-2 w-8 min-[526px]:w-11 aspect-auto flex items-center justify-center border-gray-50 py-2 px-5 min-[526px]:px-3 hover:bg-gray-50 transition-colors duration-300 text-gray-50"
+              href="https://www.instagram.com/spinkraftventures/"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              class="hover:text-blue-950 border-2 w-8 min-[526px]:w-11 aspect-auto flex items-center justify-center border-gray-50 py-2 px-5 min-[526px]:px-3 hover:bg-gray-50 transition-colors duration-300 text-gray-50"
+              href="https://www.facebook.com/spinkraftventures"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              class="hover:text-blue-950 border-2 w-8 min-[526px]:w-11 aspect-auto flex items-center justify-center border-gray-50 py-2 px-5 min-[526px]:px-3 hover:bg-gray-50 transition-colors duration-300 text-gray-50"
+              href="https://www.linkedin.com/company/spinkraftventure/"
+              ><i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              class="hover:text-blue-950 border-2 w-8 min-[526px]:w-11 aspect-auto flex items-center justify-center border-gray-50 py-2 px-5 min-[526px]:px-3 hover:bg-gray-50 transition-colors duration-300 text-gray-50"
+              href="#"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-slate-300">
+          <h2
+            class="text-blue-500 text-base lg:text-xl tracking-[0.2rem] lg:tracking-[0.4rem] font-semibold uppercase mb-4"
+          >
+            ABOUT
+          </h2>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Company</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Community</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Careers</span></a
+            >
+          </div>
+        </div>
+        <div class="text-slate-300">
+          <h2
+            class="text-blue-500 text-base lg:text-xl tracking-[0.3rem] font-semibold uppercase mb-4"
+          >
+            PUBLIC RELATIONS
+          </h2>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Blogs</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Press Release</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Terms and Conditions</span></a
+            >
+          </div>
+        </div>
+        <div class="text-slate-300">
+          <h2
+            class="text-blue-500 text-base lg:text-xl tracking-[0.2rem] lg:tracking-[0.4rem] font-semibold uppercase mb-4"
+          >
+            products
+          </h2>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Solar PV Module</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">Solar Inverter</span></a
+            >
+            <a href="#" class="group"
+              ><i
+                class="fa fa-angle-right text-xs lg:text-sm font-bold mr-1"
+              ></i>
+              <span class="group-hover:underline">EV Charger</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer
+      class="text-xs leading-6 min-[558px]:text-base bg-blue-950 py-8 px-6 border-t border-[#9b95953f] text-gray-50 text-center tracking-wide"
+    >
+      <p>
+        © <a href="#" class="text-blue-500">spinkraft.com</a>. All Rights
+        Reserved. Designed by
+        <a
+          href="https://portfolio-hashib.netlify.app/"
+          target="_blank"
+          class="text-blue-500"
+          >Hashib Raja</a
+        >
+      </p>
+    </footer>
+
+    <!-- Footer Section End -->
+  </body>
+</html>
