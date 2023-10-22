@@ -52,7 +52,7 @@
       <ul
         class="mx-auto max-w-7xl text-sm lg:text-base sm:flex-row flex-col flex items-center justify-center gap-4 sm:gap-3 min-[668px]:gap-4 min-[878px]:gap-6 md:gap-8 text-gray-50 font-medium min-[878px]:font-semibold uppercase"
       >
-        <li><a href="/" class="text-blue-500">HOME</a></li>
+        <li><a href="/" class="hover:text-blue-500">HOME</a></li>
         <li><a href="#" class="hover:text-blue-500">ABOUT</a></li>
         <li>
           <a href="#" class="hover:text-blue-500">PRODUCT</a>
@@ -66,7 +66,7 @@
         <li><a href="/team.html" class="hover:text-blue-500">TEAM</a></li>
         <li><a href="/faq.html" class="hover:text-blue-500">FAQ'S</a></li>
         <li>
-          <a href="/contact.html" class="hover:text-blue-500">CONTACT</a>
+          <a href="/contact.html" class="text-blue-500">CONTACT</a>
         </li>
         <li>
           <a href="/login.html" class="hover:text-blue-500">LOGIN</a>
@@ -92,8 +92,10 @@
           <div class="w-28 bg-blue-500 h-[2px] mx-auto mb-4"></div>
         </div>
 
-        <div class="flex flex-wrap gap-x-14 gap-y-8">
-          <div class="flex flex-col gap-y-9 w-1/2">
+        <div
+          class="flex flex-wrap gap-x-8 min-[1098px]:gap-x-14 gap-y-8 items-start"
+        >
+          <div class="flex flex-col gap-y-9 w-full lg:w-3/5 min-[1098px]:w-1/2">
             <div class="">
               <h3 class="text-blue-950 font-semibold text-xl my-5">Address</h3>
               <div class="flex flex-wrap gap-x-6 gap-y-4">
@@ -113,7 +115,7 @@
               <h3 class="text-blue-950 font-semibold text-xl my-5">
                 Contact Detail
               </h3>
-              <div class="flex flex-wrap gap-x-6 gap-y-4">
+              <div class="flex flex-wrap gap-x-6 gap-y-4 justify-around">
                 <!-- Contact Card 1: Pravesh Bhargava -->
                 <div
                   class="py-8 px-10 bg-blue-50 rounded max-w-sm hover:bg-blue-100"
@@ -152,6 +154,68 @@
               </div>
             </div>
           </div>
+
+          <form
+            class="w-max lg:w-2/6 mx-auto min-[1098px]:w-auto border-2 shadow-md shadow-blue-800 hover:shadow-lg hover:shadow-blue-700 border-blue-950 py-8 px-6 min-[404px]:px-12 rounded-xl"
+          >
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-xs font-semibold"
+                >Full Name</label
+              >
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                value=""
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-xs font-semibold"
+                >Email</label
+              >
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                value=""
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="mobile" class="leading-7 text-xs font-semibold"
+                >Mobile</label
+              >
+              <input
+                required
+                type="text"
+                id="mobile"
+                name="mobile"
+                value=""
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="requirement" class="leading-7 text-xs font-semibold"
+                >Message</label
+              >
+              <textarea
+                required
+                id="requirement"
+                name="requirement"
+                rows="4"
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <button
+              class="bg-blue-500 text-lg py-3 px-10 font-semibold w-full mt-9 block text-gray-50 hover:bg-blue-600"
+              href="#"
+            >
+              Get a quote
+            </button>
+          </form>
         </div>
       </section>
 
