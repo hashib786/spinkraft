@@ -63,12 +63,14 @@
         >
           <a href="/">SPINKRAFT</a>
         </li>
-        <li><a href="/team.html" class="text-blue-500">TEAM</a></li>
+        <li><a href="/team.html" class="hover:text-blue-500">TEAM</a></li>
         <li><a href="/faq.html" class="hover:text-blue-500">FAQ'S</a></li>
         <li>
           <a href="#" class="hover:text-blue-500">CONTACT</a>
         </li>
-        <li><a href="/login.html" class="hover:text-blue-500">LOGIN</a></li>
+        <li>
+          <a href="/login.html" class="text-blue-500">LOGIN</a>
+        </li>
       </ul>
     </nav>
     <!-- NavBar End -->
@@ -77,148 +79,82 @@
     <main
       class="mx-auto max-w-7xl py-2 px-5 min-[526px]:py-4 min-[526px]:px-6 flex flex-col gap-14 mt-10 divide-y divide-gray-100"
     >
-      <!-- Professional team Start -->
+      <!-- Login Page Start -->
 
       <section
-        class="py-12 min-[404px]:py-24 flex flex-col gap-7 bg-blue-950 rounded-md"
+        class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8"
       >
-        <div class="relative text-center">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+          <img src="img/logo.png" class="w-48 mx-auto" alt="Company Logo" />
           <h2
-            class="text-2xl min-[404px]:text-4xl lg:text-6xl text-gray-50 font-semibold capitalize"
+            class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-blue-950"
           >
-            Professional team
+            Sign in to your account
           </h2>
-          <div class="w-36 bg-blue-500 h-[2px] mx-auto mt-4 mb-1"></div>
-          <div class="w-28 bg-blue-500 h-[2px] mx-auto mb-4"></div>
         </div>
 
-        <div
-          class="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3 min-[951px]:grid-cols-4 gap-x-6 gap-y-9 px-5 min-[400px]:px-10 min-[416px]:px-16 min-[500px]:px-5 mt-6"
-        >
-          <div
-            class="bg-[#ffffff0d] text-center rounded-md px-8 py-9 text-gray-50 transition-all duration-300 hover:scale-110"
-          >
-            <img
-              src="/img/ajay-patel.jpg"
-              class="w-44 rounded-full aspect-square block mx-auto"
-              alt="Ajay Patel"
-            />
-            <h3
-              class="text-sm lg:text-base tablet:text-xl mt-7 font-semibold mb-2"
-            >
-              Mr. Ajay Patel
-            </h3>
-            <p class="text-xs text-gray-300">Managing Director</p>
-            <div
-              class="flex items-center justify-center gap-6 mt-5 text-2xl text-gray-400"
-            >
-              <a
-                class="hover:text-gray-100"
-                href="https://www.linkedin.com/in/ajay-patel-77924392/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="hover:text-gray-100" href="https://facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a class="hover:text-gray-100" href="#">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form class="space-y-6" action="#" method="POST">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium leading-6 text-blue-950"
+                >Email address</label
+              >
+              <div class="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="block w-full rounded-md border-0 py-1.5 text-blue-950 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-offset-blue-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="bg-[#ffffff0d] text-center rounded-md px-8 py-9 text-gray-50 transition-all duration-300 hover:scale-110"
-          >
-            <img
-              src="/img/acharan-chandel.jpg"
-              class="w-44 rounded-full aspect-square block mx-auto"
-              alt="Acharan Chandel"
-            />
-            <h3
-              class="text-sm lg:text-base tablet:text-xl mt-7 font-semibold mb-2"
-            >
-              Mr. Acharan Chandel
-            </h3>
-            <p class="text-xs text-gray-300">CoFounder and Director</p>
-            <div
-              class="flex items-center justify-center gap-6 mt-5 text-2xl text-gray-400"
-            >
-              <a
-                class="hover:text-gray-100"
-                href="https://www.linkedin.com/in/acharan-chandel-9b492a2b/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="hover:text-gray-100" href="https://facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a class="hover:text-gray-100" href="#">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <label
+                  for="password"
+                  class="block text-sm font-medium leading-6 text-blue-950"
+                  >Password</label
+                >
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-semibold text-blue-500 hover:text-blue-700"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+              <div class="mt-2">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  required
+                  class="block w-full rounded-md border-0 py-1.5 text-blue-950 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="bg-[#ffffff0d] text-center rounded-md px-8 py-9 text-gray-50 transition-all duration-300 hover:scale-110"
-          >
-            <img
-              src="/img/pravesh-bhargava.jpg"
-              class="w-44 rounded-full aspect-square block mx-auto"
-              alt="Mr. Pravesh Bhargava"
-            />
-            <h3
-              class="text-sm lg:text-base tablet:text-xl mt-7 font-semibold mb-2"
-            >
-              Mr. Pravesh Bhargava
-            </h3>
-            <p class="text-xs text-gray-300">Director (Sales)</p>
-            <div
-              class="flex items-center justify-center gap-6 mt-5 text-2xl text-gray-400"
-            >
-              <a
-                class="hover:text-gray-100"
-                href="https://www.linkedin.com/in/ajay-patel-77924392/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="hover:text-gray-100" href="https://facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a class="hover:text-gray-100" href="#">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Sign in
+              </button>
             </div>
-          </div>
-          <div
-            class="bg-[#ffffff0d] text-center rounded-md px-8 py-9 text-gray-50 transition-all duration-300 hover:scale-110"
-          >
-            <img
-              src="/img/umesh-nagre.jpg"
-              class="w-44 rounded-full aspect-square block mx-auto"
-              alt="Mr. Umesh Nagre"
-            />
-            <h3
-              class="text-sm lg:text-base tablet:text-xl mt-7 font-semibold mb-2"
-            >
-              Mr. Umesh Nagre
-            </h3>
-            <p class="text-xs text-gray-300">Sales Executive (Maharashtra)</p>
-            <div
-              class="flex items-center justify-center gap-6 mt-5 text-2xl text-gray-400"
-            >
-              <a
-                class="hover:text-gray-100"
-                href="https://www.linkedin.com/in/umesh-nagre-3a5921108/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="hover:text-gray-100" href="https://facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a class="hover:text-gray-100" href="#">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
-            </div>
-          </div>
+          </form>
         </div>
       </section>
 
-      <!-- Professional team End -->
+      <!-- Login Page End -->
+
+      <!-- Request A Quote End -->
     </main>
     <!-- Main Section End -->
 
